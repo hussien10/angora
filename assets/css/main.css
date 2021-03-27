@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* general style */
 * {
     margin: 0;
@@ -88,9 +95,15 @@ h1::first-letter{
     font-size: 38px;
     position: relative;
     text-transform: capitalize;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     font-weight: bolder;
     padding-bottom: 16px;
     margin-bottom: 32px;
@@ -135,7 +148,8 @@ h1::first-letter{
 /* fixed navbar */
 .fixed-nav{
     background-color: #fff;
-    box-shadow: 5px 5px 15px 0 rgb(31 31 31 / 7%);
+    -webkit-box-shadow: 5px 5px 15px 0 rgb(31 31 31 / 7%);
+            box-shadow: 5px 5px 15px 0 rgb(31 31 31 / 7%);
 }
 .fixed-nav a,.fixed-nav svg{
     color: #282828!important;
@@ -155,7 +169,8 @@ nav.navbar{
 .custom-navbar-toggeler:focus{
     border: none;
     outline: none!important;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 .custom-navbar-toggler-icon{
     height: 2px;
@@ -263,6 +278,23 @@ header .navbar .nav-item:hover .nav-link,header .navbar .nav-social span:hover a
      z-index: 11;
 }
 /* dot animation */
+@-webkit-keyframes down{
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+100%{
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+    opacity: 0;
+}
+}
 @keyframes down{
     0%{
         transform: translateY(0);
@@ -369,15 +401,12 @@ header .navbar .nav-item:hover .nav-link,header .navbar .nav-social span:hover a
     background: #fff;
     /*Centerslidetextvertically*/display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -457,7 +486,20 @@ header .navbar .nav-item:hover .nav-link,header .navbar .nav-social span:hover a
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.get-on-touch .contact-data .form-control::-webkit-input-placeholder{
+    color: #a6a6a6;
+}
+.get-on-touch .contact-data .form-control::-moz-placeholder{
+    color: #a6a6a6;
+}
+.get-on-touch .contact-data .form-control:-ms-input-placeholder{
+    color: #a6a6a6;
+}
+.get-on-touch .contact-data .form-control::-ms-input-placeholder{
+    color: #a6a6a6;
 }
 .get-on-touch .contact-data .form-control::placeholder{
     color: #a6a6a6;
@@ -554,7 +596,8 @@ footer li:hover a,footer p:hover a ,footer a:hover{
 .settings{
     z-index: 1000;
     background-color: #fff;
-    box-shadow: 0 1px 2px rgb(35 35 35 / 10%), transparent 0 0 0, transparent 0 0 0;
+    -webkit-box-shadow: 0 1px 2px rgb(35 35 35 / 10%), transparent 0 0 0, transparent 0 0 0;
+            box-shadow: 0 1px 2px rgb(35 35 35 / 10%), transparent 0 0 0, transparent 0 0 0;
 }
 .colors{
     display: none;
@@ -569,6 +612,8 @@ footer li:hover a,footer p:hover a ,footer a:hover{
 .loader-screen{
     background-color: #222;
     z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .loader{
@@ -576,10 +621,37 @@ footer li:hover a,footer p:hover a ,footer a:hover{
     border-bottom: 3px solid #fff;
     width: 70px;
     height: 70px;
-    animation-name: round;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    -webkit-animation-name: round;
+            animation-name: round;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+@-webkit-keyframes round{
+    0%{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+50%{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
 @keyframes round{
     0%{
