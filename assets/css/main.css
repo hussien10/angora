@@ -101,9 +101,9 @@ h1::first-letter{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     font-weight: bolder;
     padding-bottom: 16px;
     margin-bottom: 32px;
