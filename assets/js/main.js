@@ -34,11 +34,15 @@ $(document).ready(
          new WOW().init()
         //  client swiper
         var swiper = new Swiper('.swiper-container.client-swiper', {
-          slidesPerView: 5,
+          slidesPerView: 3,
           centeredSlides: true,
           loop: true,
           spaceBetween: 0,
-          slideToClickedSlide:true
+          slideToClickedSlide:true,
+          567: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
         });
         $(".swiper-slide").on("click",function(){
           var client=$(this).data("show")
@@ -60,7 +64,7 @@ $(document).ready(
 
         // down button
         $(".down").on("click",function(){
-          $(window).scrollTop(500)
+          $("body,html").animate({scrollTop:500},{duration:500},'linear')
         })
         // top button
         $(".up").on("click",function(){

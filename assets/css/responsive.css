@@ -1,3 +1,15 @@
+@media screen and (max-width:567px){
+    .client-data p{
+        font-size: 10px;
+    }
+    .client-data h5{
+        font-size: 10px;
+    }
+    .client-swiper .swiper-slide-active,.client-swiper .swiper-slide{
+       padding: 16px;
+    }
+}
+
 @media screen and (max-width:768px){
     h1{
         font-size: 36px;
@@ -32,4 +44,5 @@
     .get-on-touch .c-data{
         margin-bottom: 32px;
     }
+    
 }

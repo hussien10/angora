@@ -94,6 +94,7 @@ h1::first-letter{
     font-weight: bolder;
     padding-bottom: 16px;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .title h2:after {
@@ -106,6 +107,7 @@ h1::first-letter{
     position: absolute;
     font-size: 72px;
     font-weight: bolder;
+    text-align: center;
 }
 .title h2:before{
     content: "";
@@ -386,6 +388,10 @@ header .navbar .nav-item:hover .nav-link,header .navbar .nav-social span:hover a
 }
 .client-data{
     display: none;
+}
+.client-swiper .swiper-slide-active img{
+    padding: 4px;
+
 }
   .client-swiper .swiper-slide-active{
       transform: scale(1.3);
