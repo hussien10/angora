@@ -1,0 +1,35 @@
+@media screen and (max-width:768px){
+    h1{
+        font-size: 36px;
+    }
+    .intro p{
+        width: 100%!important;
+    }
+    header nav .navbar-collapse{
+        background-color: #fff;
+    }
+    header nav .container-md{
+        padding: 0!important;
+    }
+    header .nav-link{
+        color: #282828!important;
+    }
+    header .navbar-brand{
+        padding-left: 8px!important;
+    }
+    .card{
+        width: 100%!important;
+    }
+    .ideas {
+        flex-direction: column;
+    }
+    .ideas h5{
+        font-size: 24px;
+    }
+    .get-on-touch h4{
+        font-size: 24px;
+    }
+    .get-on-touch .c-data{
+        margin-bottom: 32px;
+    }
+}
