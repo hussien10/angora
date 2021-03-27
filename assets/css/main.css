@@ -98,16 +98,18 @@ h1::first-letter{
 }
 
 .title h2:after {
-    /* 
-        -attr property take value from html attr and set it as css property value 
-        -i use it here to change set the first letter from  title as content to element after
-    */
-    content: attr(data-firstLitter);
+    /*-attrpropertytakevaluefromhtmlattrandsetitascsspropertyvalue-iuseitheretochangesetthefirstletterfromtitleascontenttoelementafter*/content: attr(data-firstLitter);
     opacity: .1;
     position: absolute;
     font-size: 72px;
     font-weight: bolder;
     text-align: center;
+    left: 50%;
+    transform: translateX(-50%) ;
+    -webkit-transform: translateX(-50%) ;
+    -moz-transform: translateX(-50%) ;
+    -ms-transform: translateX(-50%) ;
+    -o-transform: translateX(-50%) ;
 }
 .title h2:before{
     content: "";
