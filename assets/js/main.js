@@ -23,12 +23,15 @@ $(document).ready(
               animateClass:'animatedSlide'
             }
           );
-          bannerWow.init()});
+        });
           
           
          $(".banner-swiper .swiper-button-prev,.banner-swiper .swiper-button-next").on("click",function(){
-          bannerWow=new WOW();
-          bannerWow.init()
+          bannerWow=new WOW(
+            {
+              animateClass:'animatedSlide'
+            }
+          );
          })
 
          new WOW().init()
